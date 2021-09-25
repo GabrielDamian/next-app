@@ -18,7 +18,7 @@ export async function getStaticProps()
 const Index = (props)=>{
   let ceva = async ()=>{
     console.log("Aic")
-    let temp_data = await axios.get('https://next-app998.herokuapp.com/paths');
+    let temp_data = await axios.get('https://next-app242.herokuapp.com/paths');
     console.log(temp_data.data);
 }
 React.useEffect(()=>{

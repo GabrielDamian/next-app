@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export async function getServerSideProps()
 {
-    let temp_data = await axios.get('https://next-app998.herokuapp.com/all')
+    let temp_data = await axios.get('https://next-app242.herokuapp.com/all')
     return({
         props:{
             static:temp_data.data

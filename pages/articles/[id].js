@@ -3,7 +3,7 @@ import axios from 'axios';
 import styles from '../../styles/Articles.module.css';
 
 export async function getStaticPaths(){
-    let temp_data = await axios.get('https://next-app998.herokuapp.com/paths').then((el)=>{
+    let temp_data = await axios.get('https://next-app242.herokuapp.com/paths').then((el)=>{
         return el.data;
     })
     let temp_list = [];
@@ -25,7 +25,7 @@ export async function getStaticProps({params})
 {
     let id_here_from_api = params.id;
     id_here_from_api = id_here_from_api + "ASDASDAS";
-    let temp_api_custom_data = await axios.post('https://next-app998.herokuapp.com/article',{
+    let temp_api_custom_data = await axios.post('https://next-app242.herokuapp.com/article',{
         id: params.id
     })
 
